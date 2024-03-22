@@ -1,0 +1,111 @@
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test
+$ git init
+Initialized empty Git repository in C:/Users/PC/Desktop/viva/test/.git/
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (master)
+$ git touch  BCA_Lab_Answer.txt
+git: 'touch' is not a git command. See 'git --help'.
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (master)
+$ touch  BCA_Lab_Answer.txt
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (master)
+$ git branch -M BCA_Lab_Test
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ git status
+On branch BCA_Lab_Test
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BCA_Lab_Answer.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ git add .
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ git commit -m "bca lab test"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'PC@DELLPC1.(none)')
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ ^C
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$  git config --global user.email "bca190620_suraj@achsnepal.edu.np"
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+
+
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ ^C
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ git config --global user.name "bca190620"
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ git commit -m "bca lab test"
+[BCA_Lab_Test (root-commit) e451da9] bca lab test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 BCA_Lab_Answer.txt
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ git remote add origin https://github.com/bca190620/BCALab2080
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ git push
+fatal: The current branch BCA_Lab_Test has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin BCA_Lab_Test
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
+$ git push --set-upstream origin BCA_Lab_Test
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 226 bytes | 226.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'BCA_Lab_Test' on GitHub by visiting:
+remote:      https://github.com/bca190620/BCALab2080/pull/new/BCA_Lab_Test
+remote:
+To https://github.com/bca190620/BCALab2080
+ * [new branch]      BCA_Lab_Test -> BCA_Lab_Test
+branch 'BCA_Lab_Test' set up to track 'origin/BCA_Lab_Test'.
+
+PC@DELLPC1 MINGW64 ~/Desktop/viva/test (BCA_Lab_Test)
